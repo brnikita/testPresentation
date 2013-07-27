@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Животные",
+        "directory": "animals",
+        "slides": [
+            "slide1.html",
+            "slide2.html",
+            "slide3.html",
+            "slide5.html",
+            "slide7.html",
+            "slide9.html"
+        ]
+    },
+    {
+        "title": "Еда",
+        "directory": "food",
+        "slides": [
+            "slide1.html",
+            "slide2.html",
+            "slide3.html"
+        ]
+    },
+    {
+        "directory": "work",
+        "slides": [
+            "slide1.html",
+            "slide2.html",
+            "slide3.html"
+        ]
+    },
+    {
+        "title": "Пустая презентация"
+    }
+
+]

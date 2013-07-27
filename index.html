@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Презентация</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+<body>
+<div class="container-fluid">
+    <h3 class="text-info">Мои презентации</h3>
+    <ul class="nav nav-tabs" id="tabs-panel"></ul>
+    <div class="row-fluid">
+        <ul class="tab-content" id="presentations-list"></ul>
+        <div id="presentation-main">
+            <div id="current-slide">
+                <iframe src=""></iframe>
+            </div>
+            <div class="btn-group">
+                <button class="btn" id="previous-slide">Предыдущий</button>
+                <button class="btn" id="next-slide">Следующий</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Шаблон табов-->
+<script id="tabTemplate" type="text/template">
+    <a href="/#<%=directory %>"><%= title%></a>
+</script>
+
+<!--Шаблон списка слайдов-->
+<script id="presentationTemplate" type="text/template">
+    <ul>
+        <% for(var i = 0, length = slides.length; i < length; i++) { %>
+        <li class="slide-thumbnail">
+            <a href="/#<%=directory + '/'  + slides[i]%>"></a>
+
+            <div class="iframe-wrapper">
+                <iframe src="/presentations/<%=directory + '/' + slides[i]%>"></iframe>
+            </div>
+        </li>
+        <% } %>
+    </ul>
+</script>
+
+<script data-main="js/app" src="js/libs/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    outline: none;
+}
+
+img {
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+h1 {
+    font-size: 36px;
+    padding-bottom: 15px;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+#slide-wrapper {
+    width: 1024px;
+    height: 768px;
+    background: #84f89d;
+    color: #fff;
+    font: 16px Arial;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#slide-wrapper table {
+    margin: 0 auto;
+}
+
+#slide-wrapper td {
+    padding: 20px 0;
+}
+
+#slide-wrapper ul {
+    margin: 0 auto;
+    padding-left: 40px;
+    width: 160px;
+    text-align: left;
+    list-style: disc inside;
+}
+
+#slide-wrapper li {
+    padding-bottom: 10px;
+}
