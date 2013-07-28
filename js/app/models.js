@@ -1,12 +1,20 @@
 define(
     ['backbone'],
     function (Backbone) {
+
+        /**
+         * Объект, содержащий модели
+         *
+         * @public
+         * @name Models
+         * @type {Object}
+         */
         var Models =  {
             Presentation: Backbone.Model.extend({
 
                 /**
-                 * @protected
-                 * @name Presentation#defaults
+                 * @public
+                 * @name Models.Presentation#defaults
                  * @type {Object}
                  */
                 defaults: {
