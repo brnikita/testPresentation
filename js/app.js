@@ -51,12 +51,11 @@ var App = {
      * @public
      * @function
      * @name App.init
-     * @param {Backbone} Backbone
      * @param {Backbone.View} Views
      * @param {Backbone.Router} Router
      * @returns {undefined}
      */
-    init: function (Backbone, Views, Router) {
+    init: function (Views, Router) {
         this.presentationsView = new Views.Presentations();
         this.presentationsView.collection.bind('reset', function () {
             this.router = new Router(this.presentationsView);
@@ -159,8 +158,8 @@ var App = {
 };
 
 require(
-    ['backbone', 'app/views', 'app/router', 'bootstrap'],
-    function (Backbone, Views, Router) {
-        App.init(Backbone, Views, Router);
+    ['app/views', 'app/router', 'bootstrap'],
+    function (Views, Router) {
+        App.init(Views, Router);
     }
 );
